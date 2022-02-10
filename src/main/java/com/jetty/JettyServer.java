@@ -1,6 +1,7 @@
 package com.jetty;
 
 import com.jetty.servlets.DisplayTextServlet;
+import com.jetty.servlets.DisplayTextServlet1;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletHandler;
 
@@ -11,6 +12,7 @@ public class JettyServer {
 
         ServletHandler handler = new ServletHandler();
         handler.addServletWithMapping(DisplayTextServlet.class, "/displaytext");
+        handler.addServletWithMapping(DisplayTextServlet1.class, "/displaytext1");
         server.setHandler(handler);
 
         server.start();
