@@ -17,6 +17,7 @@ public class DisplayTextServlet extends HttpServlet {
         response.setStatus(HttpStatus.OK_200);
         PrintWriter out = response.getWriter();
         out.println("<h1> Welcome to 1st Maven Project using Jetty server </h1>");
+        out.println("<h2> DisplayTextServlet </h2>");
     }
 
 }
